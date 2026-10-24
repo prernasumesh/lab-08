@@ -28,8 +28,8 @@ class Wizard(val name: String, var mana: Int, var spellPower: Int) {
 
     fun train(){
         if (mana >= 5){
-            mana = mana - 5
-            spellPower = spellPower + 1
+            spellPower += 1
+            mana -= 5
         }
     }
 }
